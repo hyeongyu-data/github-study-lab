@@ -1,4 +1,4 @@
-# Today
+# Day 01
 
 ## 배운 것
 
@@ -6,6 +6,20 @@
 - `git init`, `git add`, `git commit`으로 첫 커밋을 만들었다.
 - `gh repo create ... --source=. --remote=origin --push`로 GitHub 저장소 생성, 원격 연결, push를 한 번에 진행할 수 있다.
 - 현재 원격 저장소는 `https://github.com/hyeongyu-data/github-study-lab.git`이다.
+```
+cd /github-study-lab
+git status
+git add 파일명 # 원하는 파일만 add
+git add -A # 전체 add
+git commit -m "메세지" # 커밋 메세지 입력
+git push
+```
+- push 한거 되돌리기
+```
+git reset --soft HEAD~1
+git push --force-with-lease
+```
+
 
 ## 헷갈린 것
 
