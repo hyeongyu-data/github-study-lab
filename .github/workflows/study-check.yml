@@ -1,0 +1,21 @@
+name: Study Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-notes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List study notes
+        run: ls -la notes
+
+      - name: Check day 07 note exists
+        run: test -f notes/day-07.md
