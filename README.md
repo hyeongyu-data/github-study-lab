@@ -15,6 +15,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 5. Issues: 작업 생성과 PR 연결
 6. Labels와 Milestones: 작업 분류와 목표 관리
 7. Actions 기초: 자동화와 CI
+8. Actions 로그와 workflow 개선
 
 ## Study Rhythm
 
@@ -35,6 +36,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 | 05 | Issue 생성과 PR 자동 종료 | `notes/day-05.md` |
 | 06 | 라벨과 마일스톤으로 Issue 관리 | `notes/day-06.md` |
 | 07 | GitHub Actions 기초 자동 검사 | `notes/day-07.md` |
+| 08 | Actions 로그 확인과 workflow 개선 | `notes/day-08.md` |
 
 ## Progress
 
@@ -45,6 +47,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 - Day 05: Issue 생성, `Closes #이슈번호`로 PR과 연결, merge 후 Issue 자동 종료 확인 완료
 - Day 06: 라벨과 마일스톤을 만들고 Issue에 연결하는 흐름 정리
 - Day 07: GitHub Actions workflow를 만들고 PR과 push에서 자동 검사가 실행되는 흐름 정리
+- Day 08: Actions 실행 로그를 확인하고 workflow 수동 실행과 Node 24 opt-in 흐름 정리
 
 ## Command Rules
 
@@ -89,6 +92,7 @@ gh run list
 gh run view
 gh run watch
 gh run view --log
+gh workflow run "Study Check" --ref main
 ```
 
 ## Remote Repository
