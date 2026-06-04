@@ -109,6 +109,7 @@ sed -n '1,160p' .github/workflows/study-check.yml
 - `workflow_dispatch`: 명령어로 수동 실행 가능하게 만들기
 - `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`: Node.js 24 opt-in
 - `notes/day-08.md` 존재 여부 확인
+- `actions/checkout@v6.0.3`: Node.js 24를 지원하는 최신 checkout action 사용
 
 수정 후 확인한다.
 
@@ -128,6 +129,13 @@ on:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+```
+
+checkout action 버전도 확인한다.
+
+```yaml
+      - name: Checkout repository
+        uses: actions/checkout@v6.0.3
 ```
 
 ## 7. 8일차 변경사항 커밋하기
