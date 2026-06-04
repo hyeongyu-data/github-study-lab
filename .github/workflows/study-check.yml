@@ -1,10 +1,14 @@
 name: Study Check
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches:
       - main
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   check-notes:
@@ -12,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
 
       - name: List study notes
         run: ls -la notes
 
-      - name: Check day 07 note exists
-        run: test -f notes/day-07.md
+      - name: Check day 08 note exists
+        run: test -f notes/day-08.md
