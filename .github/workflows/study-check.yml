@@ -21,5 +21,5 @@ jobs:
       - name: List study notes
         run: ls -la notes
 
-      - name: Check day 08 note exists
-        run: test -f notes/day-08.md
+      - name: Check day 09 note exists
+        run: test -f notes/day-09.md
