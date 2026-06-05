@@ -264,7 +264,8 @@ git push
 
 ## 실습 기록
 
-- 
+- 첫 PR Actions run `26998415953`에서 `test -f notes/day-99.md`가 실패하는 것을 확인했다.
+- workflow 검사 경로를 `notes/day-09.md`로 수정해서 다시 실행한다.
 
 ## 다음에 해볼 것
 
