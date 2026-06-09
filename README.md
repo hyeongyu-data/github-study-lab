@@ -17,6 +17,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 7. Actions 기초: 자동화와 CI
 8. Actions 로그와 workflow 개선
 9. Actions 실패 디버깅
+10. Actions 여러 job과 needs
 
 ## Study Rhythm
 
@@ -39,6 +40,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 | 07 | GitHub Actions 기초 자동 검사 | `notes/day-07.md` |
 | 08 | Actions 로그 확인과 workflow 개선 | `notes/day-08.md` |
 | 09 | Actions 실패 로그 디버깅 | `notes/day-09.md` |
+| 10 | Actions 여러 job과 needs 실행 순서 | `notes/day-10.md` |
 
 ## Progress
 
@@ -51,6 +53,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 - Day 07: GitHub Actions workflow를 만들고 PR과 push에서 자동 검사가 실행되는 흐름 정리
 - Day 08: Actions 실행 로그를 확인하고 workflow 수동 실행과 Node 24 opt-in 흐름 정리
 - Day 09: Actions를 일부러 실패시킨 뒤 로그를 보고 workflow를 수정하는 흐름 정리
+- Day 10: Actions workflow를 여러 job으로 나누고 `needs`로 실행 순서를 제어하는 흐름 정리
 
 ## Command Rules
 

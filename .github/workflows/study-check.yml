@@ -21,5 +21,28 @@ jobs:
       - name: List study notes
         run: ls -la notes
 
-      - name: Check day 09 note exists
-        run: test -f notes/day-09.md
+      - name: Check day 10 note exists
+        run: test -f notes/day-10.md
+
+  check-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6.0.3
+
+      - name: Check README exists
+        run: test -f README.md
+
+      - name: Check README mentions day 10
+        run: grep -q "day-10.md" README.md
+
+  summarize-study:
+    runs-on: ubuntu-latest
+    needs:
+      - check-notes
+      - check-readme
+
+    steps:
+      - name: Print summary
+        run: echo "Study checks passed after notes and README validation."
