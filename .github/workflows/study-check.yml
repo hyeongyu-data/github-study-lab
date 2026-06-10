@@ -13,6 +13,13 @@ env:
 jobs:
   check-notes:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        note:
+          - day-09.md
+          - day-10.md
+          - day-11.md
 
     steps:
       - name: Checkout repository
@@ -21,8 +28,8 @@ jobs:
       - name: List study notes
         run: ls -la notes
 
-      - name: Check day 10 note exists
-        run: test -f notes/day-10.md
+      - name: Check matrix note exists
+        run: test -f "notes/${{ matrix.note }}"
 
   check-readme:
     runs-on: ubuntu-latest
@@ -34,8 +41,8 @@ jobs:
       - name: Check README exists
         run: test -f README.md
 
-      - name: Check README mentions day 10
-        run: grep -q "day-10.md" README.md
+      - name: Check README mentions day 11
+        run: grep -q "day-11.md" README.md
 
   summarize-study:
     runs-on: ubuntu-latest
