@@ -20,6 +20,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 10. Actions 여러 job과 needs
 11. Actions matrix 전략
 12. Actions 다중 축 matrix
+13. Actions matrix include/exclude
 
 ## Study Rhythm
 
@@ -45,6 +46,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 | 10 | Actions 여러 job과 needs 실행 순서 | `notes/day-10.md` |
 | 11 | Actions matrix 전략 | `notes/day-11.md` |
 | 12 | Actions 다중 축 matrix | `notes/day-12.md` |
+| 13 | Actions matrix include/exclude | `notes/day-13.md` |
 
 ## Progress
 
@@ -60,6 +62,7 @@ Git과 GitHub를 하루하루 명령어 중심으로 연습하면서, 실제 협
 - Day 10: Actions workflow를 여러 job으로 나누고 `needs`로 실행 순서를 제어하는 흐름 정리
 - Day 11: Actions matrix 전략으로 같은 job을 여러 입력값에 대해 반복 실행하는 흐름 정리
 - Day 12: Actions matrix에 여러 축을 추가해 검사 조합이 늘어나는 흐름 정리
+- Day 13: Actions matrix의 `exclude`와 `include`로 실행 조합을 조절하는 흐름 정리
 
 ## Command Rules
 

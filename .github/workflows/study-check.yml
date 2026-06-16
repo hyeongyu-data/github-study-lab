@@ -17,12 +17,18 @@ jobs:
       fail-fast: false
       matrix:
         note:
-          - day-10.md
           - day-11.md
           - day-12.md
+          - day-13.md
         check:
           - exists
           - has-title
+        exclude:
+          - note: day-11.md
+            check: has-title
+        include:
+          - note: day-13.md
+            check: mentions-actions
 
     steps:
       - name: Checkout repository
@@ -40,6 +46,9 @@ jobs:
             has-title)
               grep -q "^# Day" "notes/${{ matrix.note }}"
               ;;
+            mentions-actions)
+              grep -q "Actions" "notes/${{ matrix.note }}"
+              ;;
             *)
               echo "Unknown check: ${{ matrix.check }}"
               exit 1
@@ -56,8 +65,8 @@ jobs:
       - name: Check README exists
         run: test -f README.md
 
-      - name: Check README mentions day 12
-        run: grep -q "day-12.md" README.md
+      - name: Check README mentions day 13
+        run: grep -q "day-13.md" README.md
 
   summarize-study:
     runs-on: ubuntu-latest
